@@ -1,0 +1,16 @@
+<h1 class="display-1 my-3 pb-5">Ajánlataink</h1>
+<div class="row">
+    <div class="col">Kategória</div>
+    <div class="col">Leírás</div>
+    <div class="col">Hirdetés dátuma</div>
+    <div class="col">Tehermentes</div>
+    <div class="col">Fénykép</div>
+</div>
+
+<div class="row border-top" *ngFor="let ingatlan of ingatlanok">
+    <div class="col">{{kategoriak[ingatlan.kategoriaid-1].megnevezes}}</div>
+    <div class="col">{{ingatlan.leiras}}</div>
+    <div class="col">{{ingatlan.hirdetesDatuma}}</div>
+    <div class="col">{{ingatlan.tehermentes?'Igen':'Nem'}}</div>
+    <div class="col"><img [src]="ingatlan.kepUrl" alt="Ingatlan" class="img-thumbnail"></div>
+</div>

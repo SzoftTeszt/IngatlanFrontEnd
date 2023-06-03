@@ -1,0 +1,9 @@
+.main{
+    background: url("../../assets/real-estate-1024x614.webp") no-repeat;
+    background-size: cover;
+    height:100vh;
+    margin:0 auto;
+}
+.footer{
+    bottom: 5rem;
+}
